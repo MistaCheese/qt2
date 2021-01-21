@@ -59,7 +59,7 @@ public class game_TEST {
 
         exm = driver.findElement(By.xpath("//input[@type='submit']"));
         exm.click();
-        Thread.sleep(3000);
+        Thread.sleep(7000);
 
         driver.switchTo().alert().accept();
 
