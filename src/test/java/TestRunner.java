@@ -68,7 +68,7 @@ public class TestRunner {
     }
 
     @Test
-    public void gameCrate() throws InterruptedException {
+    public void gameCreate() throws InterruptedException {
         game_TEST.check(driver);
         Thread.sleep(1000);
     }

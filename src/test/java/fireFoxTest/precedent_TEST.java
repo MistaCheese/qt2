@@ -17,11 +17,9 @@ public class precedent_TEST {
 
         createCoachAndCreateObjectTraining(driver, "test123", "test123", "coach", "ravenclaw");
 
-        Connection connection = null;
-        ResultSet rs = null;
-        int rs1 = 0;
-        String id = null;
-        String plan = "1. test\n 2. test2\n3. test";
+        Connection connection;
+        ResultSet rs ;
+
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(
@@ -29,25 +27,19 @@ public class precedent_TEST {
             Statement st = connection.createStatement();
             rs = st.executeQuery("SELECT * FROM training WHERE faculty ='0'");
 
-
             while (rs.next()) {
                 if (rs.getString(2).equals("0")) {
                     System.out.println("Тест успешно пройден, запись с тренировкой записана и доступна");
                     System.out.println("Удаляем запись с тренировкой из БД");
-
                 } else {
                     Assert.fail("Запись с тренировкой не найдена!");
                 }
             }
             if (dellRow) {
                 st.executeUpdate("DELETE FROM training WHERE faculty = '0'");
-
             }
-
             st.close();
             rs.close();
-
-
         } catch (Exception e) {
             e.printStackTrace();
 
@@ -80,23 +72,23 @@ public class precedent_TEST {
         exm = driver.findElement(By.xpath("//input[@id='monday']"));
         exm.click();
 
-
+        Thread.sleep(1000);
         exm.sendKeys("10:30");
 
         exm = driver.findElement(By.xpath("//textarea[@id='mondayPlan']"));
         exm.click();
-
+        Thread.sleep(1000);
         String plan = "1. test\n2. test2\n3. test";
         exm.sendKeys(plan);
 
         exm = driver.findElement(By.xpath("//input[@id='tuesday']"));
         exm.click();
-
+        Thread.sleep(1000);
         exm.sendKeys("10:31");
 
         exm = driver.findElement(By.xpath("//textarea[@id='tuesdayPlan']"));
         exm.click();
-
+        Thread.sleep(1000);
         exm.sendKeys(plan);
 
 

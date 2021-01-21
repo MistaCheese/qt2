@@ -72,13 +72,16 @@ public class precedentDouble_TEST {
         auth.auth(driver, "coach2", "coach2");
         exm = driver.findElement(By.xpath("//a[contains(text(),'Тренировки')]"));
         exm.click();
+        Thread.sleep(1000);
 
         exm = driver.findElement(By.xpath("//input[@id='monday']"));
         exm.click();
+        Thread.sleep(1000);
         exm.sendKeys("11:35");
 
         exm = driver.findElement(By.xpath("//textarea[@id='mondayPlan']"));
         exm.click();
+        Thread.sleep(1000);
         exm.sendKeys(plan);
 
         exm = driver.findElement(By.xpath("//input[@type='submit']"));
@@ -100,6 +103,7 @@ public class precedentDouble_TEST {
                 if (rs.getString(5).equals("11:35")) {
                     System.out.println("Тест успешно пройден, запись с тренировкой записана и доступна");
                     System.out.println("Удаляем запись с тренировкой из БД");
+
                 } else {
                     Assert.fail("Запись с тренировкой не найдена!");
                 }
