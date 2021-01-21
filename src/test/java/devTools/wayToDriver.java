@@ -9,6 +9,6 @@ public class wayToDriver {
     public static final String dbUrl = "jdbc:postgresql://116.203.111.44:5432/quidditch";
     public static final String dbLogin = "quidditch_user";
     public static final String dbPass = "quidditch_2021";
-    public static final String hostUrl = "http://localhost:8090/";
+    public static final String hostUrl = "http://http://192.168.0.129:8090/";
 
 }
