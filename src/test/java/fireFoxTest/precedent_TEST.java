@@ -18,7 +18,7 @@ public class precedent_TEST {
         createCoachAndCreateObjectTraining(driver, "test123", "test123", "coach", "ravenclaw");
 
         Connection connection;
-        ResultSet rs ;
+        ResultSet rs;
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -109,7 +109,7 @@ public class precedent_TEST {
 
         WebElement exm = driver.findElement(By.xpath("//a[contains(text(),'”правление пользовател€ми')]"));
         exm.click();
-
+        Thread.sleep(5000);
         int i = 1;
 
 
