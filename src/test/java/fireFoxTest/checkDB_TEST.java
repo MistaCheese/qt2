@@ -49,7 +49,7 @@ public class checkDB_TEST {
 
         exm = driver.findElement(By.xpath("//input[@value='Добавить матч']")); // Клик по "Добавить матч"
         exm.click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
 
         driver.switchTo().alert().accept();
 

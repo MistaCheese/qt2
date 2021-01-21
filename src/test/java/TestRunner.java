@@ -44,34 +44,34 @@ public class TestRunner {
     }
 
 
-//    @Test
-//    public void precedent() throws InterruptedException {
-//        precedent_TEST.check(driver, true);
-//        Thread.sleep(1000);
-//    }
-//
-//    @Test
-//    public void precedentDouble() throws InterruptedException {
-//        precedentDouble_TEST.check(driver, true);
-//        Thread.sleep(1000);
-//    }
-//
-//    @Test
-//    public void doctor() throws InterruptedException {
-//        medicalCheckUp_TEST.check(driver);
-//        Thread.sleep(1000);
-//    }
-//
-//    @Test
-//    public void security() throws InterruptedException, IOException {
-//        security_TEST.check(driver);
-//    }
-//
-//    @Test
-//    public void gameCreate() throws InterruptedException {
-//        game_TEST.check(driver);
-//        Thread.sleep(1000);
-//    }
+    @Test
+    public void precedent() throws InterruptedException {
+        precedent_TEST.check(driver, true);
+        Thread.sleep(1000);
+    }
+
+    @Test
+    public void precedentDouble() throws InterruptedException {
+        precedentDouble_TEST.check(driver, true);
+        Thread.sleep(1000);
+    }
+
+    @Test
+    public void doctor() throws InterruptedException {
+        medicalCheckUp_TEST.check(driver);
+        Thread.sleep(1000);
+    }
+
+    @Test
+    public void security() throws InterruptedException, IOException {
+        security_TEST.check(driver);
+    }
+
+    @Test
+    public void gameCreate() throws InterruptedException {
+        game_TEST.check(driver);
+        Thread.sleep(1000);
+    }
 
     @After
     public void tearDown() {
