@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static devTools.wayToDriver.*;
 
-public class TestRunnerFireFox1 {
+public class TestRunner {
 
     String setProperty = toFireFox; // путь до драйвера хрома
     static WebDriver driver;

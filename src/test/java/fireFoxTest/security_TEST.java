@@ -8,17 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.io.IOException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+
 
 import static devTools.wayToDriver.hostUrl;
 
 public class security_TEST {
 
-    static HttpClient client;
-    static HttpRequest request;
-    static HttpResponse<String> response;
+
     static String tokenUser = ""; // Токен юзера
 
     public static void check(WebDriver driver) throws InterruptedException, IOException {
