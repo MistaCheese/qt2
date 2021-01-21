@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/test/java/devTools/auth.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/devTools/wayToDriver.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/checkDB_TEST.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/createUsers/create.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/game_TEST.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/medicalCheckUp_TEST.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/precedentDouble_TEST.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/precedent_TEST.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/fireFoxTest/security_TEST.java" charset="windows-1251" />
+  </component>
+</project>
